@@ -11,13 +11,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea6a31c-2be2-4de5-b5f5-03c05e1f387c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/util/UUIDUtil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyMySQL-1.0.2.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/_auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/charset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/connections.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/CLIENT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/COMMAND.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/CR.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/ER.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/FIELD_TYPE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/FLAG.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/SERVER_STATUS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/constants/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/converters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/cursors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/err.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/optionfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/protocol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pymysql/times.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/BusinessDeal.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/BusinessDeal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/CronJob.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/CronJob.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant/UrlsConstant.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/UrlsConstant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +124,7 @@
       <recent name="D:\IdeaProjects\Python-Projects-master\BTC_AUTO\compute" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ComputeCross">
+  <component name="RunManager" selected="Python.CronJob (1)">
     <configuration name="BTC_AUTO" type="PythonConfigurationType" factoryName="Python">
       <module name="BTC_AUTO" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -246,8 +267,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ComputeCross" />
         <item itemvalue="Python.CronJob (1)" />
+        <item itemvalue="Python.ComputeCross" />
         <item itemvalue="Python.CronJob" />
         <item itemvalue="Python.CurrentData" />
         <item itemvalue="Python.BusinessDeal" />
@@ -277,7 +298,7 @@
       <workItem from="1635934090621" duration="48000" />
       <workItem from="1635934149947" duration="1067000" />
       <workItem from="1635988996870" duration="24557000" />
-      <workItem from="1636075069625" duration="13842000" />
+      <workItem from="1636075069625" duration="17338000" />
     </task>
     <servers />
   </component>
@@ -304,22 +325,22 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2635" y="226" key="#xdebugger.evaluate/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636083117823" />
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom" timestamp="1636083388337">
+    <state width="1877" height="712" key="GridCell.Tab.0.bottom" timestamp="1636101719280">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.bottom/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636083388337" />
-    <state width="1877" height="242" key="GridCell.Tab.0.center" timestamp="1636083388337">
+    <state width="1877" height="712" key="GridCell.Tab.0.bottom/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636101719280" />
+    <state width="1877" height="712" key="GridCell.Tab.0.center" timestamp="1636101719280">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.center/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636083388337" />
-    <state width="1877" height="242" key="GridCell.Tab.0.left" timestamp="1636083388337">
+    <state width="1877" height="712" key="GridCell.Tab.0.center/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636101719280" />
+    <state width="1877" height="712" key="GridCell.Tab.0.left" timestamp="1636101719280">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.left/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636083388337" />
-    <state width="1877" height="242" key="GridCell.Tab.0.right" timestamp="1636083388337">
+    <state width="1877" height="712" key="GridCell.Tab.0.left/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636101719280" />
+    <state width="1877" height="712" key="GridCell.Tab.0.right" timestamp="1636101719280">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="242" key="GridCell.Tab.0.right/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636083388337" />
+    <state width="1877" height="712" key="GridCell.Tab.0.right/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636101719280" />
     <state width="1877" height="293" key="GridCell.Tab.1.bottom" timestamp="1636083152678">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -358,7 +379,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BTC_AUTO$BusinessDeal.coverage" NAME="BusinessDeal Coverage Results" MODIFIED="1636006802551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/BTC_AUTO$CronJob__1_.coverage" NAME="CronJob (1) Coverage Results" MODIFIED="1636075271098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/business" />
+    <SUITE FILE_PATH="coverage/BTC_AUTO$CronJob__1_.coverage" NAME="CronJob (1) Coverage Results" MODIFIED="1636098927263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/business" />
     <SUITE FILE_PATH="coverage/BTC_AUTO$CurrentData.coverage" NAME="CurrentData Coverage Results" MODIFIED="1636007761890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BTC_AUTO$CronJob.coverage" NAME="CronJob Coverage Results" MODIFIED="1636022578317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BTC_AUTO$ComputeCross.coverage" NAME="ComputeCross Coverage Results" MODIFIED="1636083386061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compute" />

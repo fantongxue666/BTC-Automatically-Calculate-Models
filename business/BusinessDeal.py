@@ -82,10 +82,10 @@ def sale(open_price):
     # 计算赔率
     if(currentPrice <= open_price):
         return None
-    percent = format((currentPrice - open_price)/currentPrice, '.2f')
-    if(percent < UrlConstant.Loss_Percent):
-        CurrentData.writeResult2Txt("【时间点：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "】 检测上一次购买的亏损率，亏损比例：" + str(percent * 100) + "%")
-    else:
-        CurrentData.writeResult2Txt("【时间点：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "】 检测上一次购买的亏损率，亏损比例：" + str(percent * 100) + "%，大于约定的赔率"+ str(UrlConstant.Loss_Percent)+"，即将自动卖出，避免过多损失！")
+    percent = format((currentPrice - open_price)/currentPrice, '.1f')
+    if(float(percent) < float(UrlConstant.Loss_Percent)):
+        CurrentData.writeResult2Txt("【时间点：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "】 检测上一次购买的亏损率，亏损比例：" + str(int(percent) * 100) + "%")
         # 自动交易
-        deal(False,open_price)
+        deal(False, open_price)
+    else:
+        CurrentData.writeResult2Txt("【时间点：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "】 检测上一次购买的亏损率，亏损比例：" + str(int(percent) * 100) + "%，大于约定的赔率"+ str(UrlConstant.Loss_Percent)+"，即将自动卖出，避免过多损失！")
