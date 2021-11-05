@@ -10,12 +10,15 @@
         - 币价60000美元左右，下降幅度0.05%内
         - 币价50000美元左右，下降幅度0.04%内
         - 等等各种情况
-4，TODO 如果已经亏损了10%，则自动卖出
+4，如果已经亏损了10%（ URLsConstant中进行配置 ），则自动卖出
 '''
 import datetime
 
+from constant.UrlsConstant import UrlConstant
+from util import UUIDUtil
 from business import CurrentData
 from compute import ComputeMACD, ComputeCross
+from constant.DataBaseHandle import DataBaseHandle
 
 '''
 检查单位时间内开盘价的下降幅度是否超过了预期阈值
@@ -49,6 +52,8 @@ def deal(flag,lastOpenPrice):
         if(ComputeCross.checkCross()):
             resultText = "【时间点：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "】 接入交易接口。。。以" + str(open_price) + "的开盘价进行了买入"
             CurrentData.writeResult2Txt(resultText)
+            sql = "insert into btc_operation values('%s','%s','buyMoney','买入',now(),'创建人')" % (UUIDUtil.getUUID(),open_price)
+            DataBaseHandle().updateDB(sql)
     elif(flag == False):
         # 死叉 卖出
         if(ComputeCross.checkCross()):
@@ -57,4 +62,30 @@ def deal(flag,lastOpenPrice):
             else:
                 resultText = "【时间点：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "】 接入交易接口。。。以" + str(open_price) + "的开盘价进行了卖出"
                 CurrentData.writeResult2Txt(resultText)
-    pass
+                sql = "insert into btc_operation values('%s','%s','buyMoney','卖出',now(),'创建人')" % (UUIDUtil.getUUID(), open_price)
+                DataBaseHandle().updateDB(sql)
+
+'''
+如果亏损了10%，自动卖出
+'''
+def sale(open_price):
+    # 查询最近一次买入时的开盘价和实际支付金额
+    sql = "select id,currentPrice,buyMoney from btc_operation where operateName = '买入' ORDER BY operateTime desc limit 1"
+    data = DataBaseHandle().selectDB(sql)
+    if(len(data) == 0):
+        return None
+
+    id = data[0][0]
+    currentPrice = data[0][1]
+    buyMoney = data[0][2]
+
+    # 计算赔率
+    if(currentPrice <= open_price):
+        return None
+    percent = format((currentPrice - open_price)/currentPrice, '.2f')
+    if(percent < UrlConstant.Loss_Percent):
+        CurrentData.writeResult2Txt("【时间点：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "】 检测上一次购买的亏损率，亏损比例：" + str(percent * 100) + "%")
+    else:
+        CurrentData.writeResult2Txt("【时间点：" + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + "】 检测上一次购买的亏损率，亏损比例：" + str(percent * 100) + "%，大于约定的赔率"+ str(UrlConstant.Loss_Percent)+"，即将自动卖出，避免过多损失！")
+        # 自动交易
+        deal(False,open_price)

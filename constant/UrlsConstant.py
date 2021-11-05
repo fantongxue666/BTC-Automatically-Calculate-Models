@@ -18,6 +18,7 @@ class UrlConstant():
     Cross_TimeLong = 6
     # 记录容器N次的记录，有N-1个时间段，这里是所有时间段中在 Cross_TimeLong 个时间段以内的时间段数量的占比
     Cross_Percent = 0.6
-
+    # 如果已经亏损了10%，则自动卖出，规避价格猛降的风险
+    Loss_Percent = 0.1
     # 公共-获取K线数据 Long_Time时间单位
     Get_K_Line = "/api/spot/v3/instruments/BTC-USDT/candles?granularity=" + str(Long_Time)
