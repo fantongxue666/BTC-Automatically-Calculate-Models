@@ -3,7 +3,7 @@ import time
 from datetime import datetime
 import requests
 
-from constant.UrlsConstant import UrlConstant
+from config.UrlsConstant import UrlConstant
 from util import LogUtil, EncryptDecryptUtil
 
 # 组装签名
