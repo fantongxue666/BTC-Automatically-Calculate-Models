@@ -1,7 +1,7 @@
 from apscheduler.schedulers.blocking import BlockingScheduler
 
 from compute import ComputeMACD
-from business import CurrentData, BusinessDeal
+from business import CurrentData
 from config.UrlsConstant import UrlConstant
 
 sched = BlockingScheduler()

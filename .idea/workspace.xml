@@ -11,16 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea6a31c-2be2-4de5-b5f5-03c05e1f387c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TA_Lib-0.4.21-cp38-cp38-win_amd64.whl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/numpy-1.21.4+vanilla-cp38-cp38-win_amd64.whl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/BTC_AUTO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BTC_AUTO.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/BusinessDeal.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/business/CronJob.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/CronJob.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/CurrentData.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/CurrentData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compute/ComputeCross.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant/DataBaseHandle.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/DataBaseHandle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant/UrlsConstant.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/UrlsConstant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/RequestUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/RequestUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compute/ComputeMACD.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute/ComputeMACD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/UrlsConstant.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/UrlsConstant.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,12 +93,15 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\btc-automatically-calculate-models" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\Python-Projects-master\BTC_AUTO\business" />
       <recent name="D:\IdeaProjects\Python-Projects-master\BTC_AUTO\compute" />
@@ -281,7 +282,7 @@
       <workItem from="1635934149947" duration="1067000" />
       <workItem from="1635988996870" duration="24557000" />
       <workItem from="1636075069625" duration="17338000" />
-      <workItem from="1638150227155" duration="1817000" />
+      <workItem from="1638150227155" duration="10647000" />
     </task>
     <servers />
   </component>
@@ -312,22 +313,22 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2635" y="226" key="#xdebugger.evaluate/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636083117823" />
-    <state width="1877" height="712" key="GridCell.Tab.0.bottom" timestamp="1636101719280">
+    <state width="1877" height="359" key="GridCell.Tab.0.bottom" timestamp="1638167240277">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="712" key="GridCell.Tab.0.bottom/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636101719280" />
-    <state width="1877" height="712" key="GridCell.Tab.0.center" timestamp="1636101719280">
+    <state width="1877" height="359" key="GridCell.Tab.0.bottom/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638167240277" />
+    <state width="1877" height="359" key="GridCell.Tab.0.center" timestamp="1638167240277">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="712" key="GridCell.Tab.0.center/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636101719280" />
-    <state width="1877" height="712" key="GridCell.Tab.0.left" timestamp="1636101719280">
+    <state width="1877" height="359" key="GridCell.Tab.0.center/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638167240277" />
+    <state width="1877" height="359" key="GridCell.Tab.0.left" timestamp="1638167240277">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="712" key="GridCell.Tab.0.left/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636101719280" />
-    <state width="1877" height="712" key="GridCell.Tab.0.right" timestamp="1636101719280">
+    <state width="1877" height="359" key="GridCell.Tab.0.left/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638167240277" />
+    <state width="1877" height="359" key="GridCell.Tab.0.right" timestamp="1638167240277">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="712" key="GridCell.Tab.0.right/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636101719280" />
+    <state width="1877" height="359" key="GridCell.Tab.0.right/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638167240277" />
     <state width="1877" height="293" key="GridCell.Tab.1.bottom" timestamp="1636083152678">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -344,10 +345,10 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="293" key="GridCell.Tab.1.right/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636083152678" />
-    <state x="2381" y="169" key="SettingsEditor" timestamp="1635934381817">
+    <state x="2376" y="205" key="SettingsEditor" timestamp="1638167695500">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2381" y="169" key="SettingsEditor/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1635934381817" />
+    <state x="2376" y="205" key="SettingsEditor/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638167695500" />
     <state x="2313" y="201" width="986" height="582" key="find.popup" timestamp="1638150780512">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -372,6 +373,7 @@
     <SUITE FILE_PATH="coverage/BTC_AUTO$BusinessDeal.coverage" NAME="BusinessDeal Coverage Results" MODIFIED="1636006802551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BTC_AUTO$CronJob__1_.coverage" NAME="CronJob (1) Coverage Results" MODIFIED="1636098927263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/business" />
     <SUITE FILE_PATH="coverage/BTC_AUTO$CurrentData.coverage" NAME="CurrentData Coverage Results" MODIFIED="1636007761890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/btc_automatically_calculate_models$CronJob__1_.coverage" NAME="CronJob (1) Coverage Results" MODIFIED="1638166977411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/business" />
     <SUITE FILE_PATH="coverage/BTC_AUTO$CronJob.coverage" NAME="CronJob Coverage Results" MODIFIED="1636022578317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BTC_AUTO$ComputeCross.coverage" NAME="ComputeCross Coverage Results" MODIFIED="1636083386061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compute" />
   </component>

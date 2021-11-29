@@ -1,6 +1,7 @@
 import numpy as np
 import json
-from constant.UrlsConstant import UrlConstant
+from config.UrlsConstant import UrlConstant
+import talib
 from util import RequestUtil
 
 def calculateEMA(period, closeArray, emaArray=[]):
@@ -38,6 +39,8 @@ def getMACD():
     data = RequestUtil.sendRequest_GET(UrlConstant.Get_K_Line)
     # 得到收盘价的数组
     closeArray = [float(i[4]) for i in data]
+    print("5日移动平均线值：" + talib.SMA(closeArray,timepreriod=5))
+
     # 得到开盘价的数组
     openArray = [float(i[1]) for i in data]
     # 顺序反转
