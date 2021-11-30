@@ -1,7 +1,6 @@
 import numpy as np
 import json
 from config.UrlsConstant import UrlConstant
-import talib
 from util import RequestUtil
 
 def calculateEMA(period, closeArray, emaArray=[]):
@@ -17,7 +16,7 @@ def calculateEMA(period, closeArray, emaArray=[]):
     return np.array(emaArray)
 
 
-def calculateMACD(openArray,closeArray, shortPeriod=12, longPeriod=26, signalPeriod=9):
+def calculateMACD(openArray,closeArray,fiveday_avg_line,tenday_avg_line, shortPeriod=12, longPeriod=26, signalPeriod=9):
     ema12 = calculateEMA(shortPeriod, closeArray, [])
     ema26 = calculateEMA(longPeriod, closeArray, [])
     diff = ema12 - ema26
@@ -32,19 +31,25 @@ def calculateMACD(openArray,closeArray, shortPeriod=12, longPeriod=26, signalPer
     # 获取最新的开盘价和收盘价
     open_price = openArray[len(openArray) - 1]
     close_price = closeArray[len(closeArray) - 1]
-    return open_price,close_price,fast_values[-1], slow_values[-1], diff_values[-1]    # 返回最新的快慢线和macd值
+    return open_price,close_price,fiveday_avg_line,tenday_avg_line,fast_values[-1], slow_values[-1], diff_values[-1]    # 返回最新的快慢线和macd值
     # return round(fast_values[-1],5), round(slow_values[-1],5), round(diff_values[-1],5)
 
 def getMACD():
     data = RequestUtil.sendRequest_GET(UrlConstant.Get_K_Line)
     # 得到收盘价的数组
     closeArray = [float(i[4]) for i in data]
-    print("5日移动平均线值：" + talib.SMA(closeArray,timepreriod=5))
-
+    avgValue = 0
+    for i in range(5):
+        avgValue += closeArray[i]
+    fiveday_avg_line = avgValue/5
+    avgValue = 0
+    for i in range(10):
+        avgValue += closeArray[i]
+    tenday_avg_line = avgValue / 10
     # 得到开盘价的数组
     openArray = [float(i[1]) for i in data]
     # 顺序反转
     closeArray.reverse()
     openArray.reverse()
-    return calculateMACD(openArray,closeArray)
+    return calculateMACD(openArray,closeArray,fiveday_avg_line,tenday_avg_line)
 
