@@ -11,7 +11,7 @@ def job_function():
     # 计算MACD值，得到开盘价，收盘价等值
     open_price,close_price,fiveday_avg_line,tenday_avg_line,first,second,third = ComputeMACD.getMACD()
     # 监控金叉/死叉的发生时机，自动进行买入和卖出
-    CurrentData.addCurrentDataObj(first, second, open_price, close_price,fiveday_avg_line,tenday_avg_line)
+    CurrentData.addCurrentDataObj(first, second,third, open_price, close_price,fiveday_avg_line,tenday_avg_line)
 
 # 开始
 sched.start()
