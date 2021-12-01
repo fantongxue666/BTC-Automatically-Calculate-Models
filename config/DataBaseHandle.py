@@ -1,3 +1,8 @@
+import sys
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(str(BASE_DIR))
+
 import pymysql
 class DataBaseHandle(object):
     # 相当于java的构造方法，初始化数据库信息并创建数据库连接

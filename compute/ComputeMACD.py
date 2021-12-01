@@ -1,6 +1,11 @@
 import numpy as np
 import json
 from config.UrlsConstant import UrlConstant
+import sys
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(str(BASE_DIR))
+
 from util import RequestUtil
 
 def calculateEMA(period, closeArray, emaArray=[]):

@@ -1,5 +1,9 @@
-from apscheduler.schedulers.blocking import BlockingScheduler
+import sys
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(str(BASE_DIR))
 
+from apscheduler.schedulers.blocking import BlockingScheduler
 from compute import ComputeMACD
 from business import CurrentData
 from config.UrlsConstant import UrlConstant

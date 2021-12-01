@@ -1,10 +1,14 @@
+import sys
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(str(BASE_DIR))
 import json
 import time
 from datetime import datetime
 import requests
-
 from config.UrlsConstant import UrlConstant
-from util import LogUtil, EncryptDecryptUtil
+from util import EncryptDecryptUtil, LogUtil
+
 
 # 组装签名
 def getSign(methodType,uri,param,timestamp):

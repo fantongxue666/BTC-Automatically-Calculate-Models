@@ -11,11 +11,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ea6a31c-2be2-4de5-b5f5-03c05e1f387c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/CronJob.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/CronJob.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/CurrentData.py" beforeDir="false" afterPath="$PROJECT_DIR$/business/CurrentData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compute/ComputeMACD.py" beforeDir="false" afterPath="$PROJECT_DIR$/compute/ComputeMACD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/DataBaseHandle.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/DataBaseHandle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/UrlsConstant.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/UrlsConstant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/driver/windows/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/DateEncoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/DateEncoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/EncryptDecryptUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/EncryptDecryptUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/LogUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/LogUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/RequestUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/RequestUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/UUIDUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/UUIDUtil.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +290,7 @@
       <workItem from="1638150227155" duration="10683000" />
       <workItem from="1638249631573" duration="10636000" />
       <workItem from="1638267490904" duration="682000" />
-      <workItem from="1638322856995" duration="14939000" />
+      <workItem from="1638322856995" duration="21021000" />
     </task>
     <servers />
   </component>
@@ -305,30 +313,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2610" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1638151913239">
+    <state x="2610" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1638350936334">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2610" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638151913239" />
+    <state x="2610" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638350936334" />
     <state x="2635" y="226" key="#xdebugger.evaluate" timestamp="1636083117823">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2635" y="226" key="#xdebugger.evaluate/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1636083117823" />
-    <state width="1877" height="209" key="GridCell.Tab.0.bottom" timestamp="1638340254747">
+    <state width="1877" height="209" key="GridCell.Tab.0.bottom" timestamp="1638351851008">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="209" key="GridCell.Tab.0.bottom/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638340254747" />
-    <state width="1877" height="209" key="GridCell.Tab.0.center" timestamp="1638340254747">
+    <state width="1877" height="209" key="GridCell.Tab.0.bottom/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638351851008" />
+    <state width="1877" height="209" key="GridCell.Tab.0.center" timestamp="1638351851008">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="209" key="GridCell.Tab.0.center/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638340254747" />
-    <state width="1877" height="209" key="GridCell.Tab.0.left" timestamp="1638340254747">
+    <state width="1877" height="209" key="GridCell.Tab.0.center/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638351851008" />
+    <state width="1877" height="209" key="GridCell.Tab.0.left" timestamp="1638351851008">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="209" key="GridCell.Tab.0.left/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638340254747" />
-    <state width="1877" height="209" key="GridCell.Tab.0.right" timestamp="1638340254747">
+    <state width="1877" height="209" key="GridCell.Tab.0.left/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638351851008" />
+    <state width="1877" height="209" key="GridCell.Tab.0.right" timestamp="1638351851008">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="209" key="GridCell.Tab.0.right/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638340254747" />
+    <state width="1877" height="209" key="GridCell.Tab.0.right/0.0.1536.832/1920.0.1920.1050@1920.0.1920.1050" timestamp="1638351851008" />
     <state width="1877" height="293" key="GridCell.Tab.1.bottom" timestamp="1636083152678">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -373,7 +381,7 @@
     <SUITE FILE_PATH="coverage/BTC_AUTO$BusinessDeal.coverage" NAME="BusinessDeal Coverage Results" MODIFIED="1636006802551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BTC_AUTO$CronJob__1_.coverage" NAME="CronJob (1) Coverage Results" MODIFIED="1636098927263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/business" />
     <SUITE FILE_PATH="coverage/BTC_AUTO$CurrentData.coverage" NAME="CurrentData Coverage Results" MODIFIED="1636007761890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/btc_automatically_calculate_models$CronJob__1_.coverage" NAME="CronJob (1) Coverage Results" MODIFIED="1638340254737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/business" />
+    <SUITE FILE_PATH="coverage/btc_automatically_calculate_models$CronJob__1_.coverage" NAME="CronJob (1) Coverage Results" MODIFIED="1638351845167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/business" />
     <SUITE FILE_PATH="coverage/BTC_AUTO$CronJob.coverage" NAME="CronJob Coverage Results" MODIFIED="1636022578317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/btc_automatically_calculate_models$Test.coverage" NAME="Test Coverage Results" MODIFIED="1638252509185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BTC_AUTO$ComputeCross.coverage" NAME="ComputeCross Coverage Results" MODIFIED="1636083386061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/compute" />
